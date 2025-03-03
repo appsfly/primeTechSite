@@ -320,6 +320,12 @@ footer {
   .hero .swiper-slide img {
     object-position: center center; /* מוודא שהתמונה ממורכזת גם אם היא חתוכה */
   }
+  .swiper { 
+    width: 100%;
+  }
+  .swiper-button-next, .swiper-button-prev { 
+    display: none !important;
+  }
   #news-board { 
     padding:10px;
     max-width: 100%;
@@ -333,7 +339,5 @@ footer {
     height:100vh;
     }
 
-  .swiper-button-next, .swiper-button-prev { 
-    display: none !important;
-  }
+
 }
