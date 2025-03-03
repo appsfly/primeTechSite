@@ -163,6 +163,52 @@ section {
   background: #0ff;
 }
 
+#news-board {
+  text-align: center;
+  padding: 50px;
+
+  color: white;
+}
+
+.newsSwiper {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+}
+.newsSwiper .swiper-wrapper {
+}
+.newsSwiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+    transition-timing-function: linear !important; /* תזוזה חלקה */
+
+}
+
+.newsSwiper .swiper-slide h3 {
+  font-size: 1.5rem;
+  color: #0ff;
+}
+
+.newsSwiper .swiper-slide p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.newsSwiper .swiper-button-next, 
+.newsSwiper .swiper-button-prev {
+  color: #0ff;
+}
+
+.newsSwiper .swiper-pagination-bullet {
+  background: #0ff;
+}
 
 /* Footer */
 footer {
