@@ -38,8 +38,41 @@ nav ul li a {
   color: #0ff;
   text-decoration: none;
 }
+.hero {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero .hero-header {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.hero .swiper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Hero Section */
+.hero-header{
+  position: relative;
+  top: 200px;
+  z-index: 100;
+}
+
 .hero {
   padding: 100px 20px;
   background-image: url('background.jpg');
@@ -166,8 +199,9 @@ section {
 #news-board {
   text-align: center;
   padding: 50px;
-
+  max-width: 50vw;
   color: white;
+  margin: 0 auto;
 }
 
 .newsSwiper {
@@ -176,8 +210,7 @@ section {
   margin: auto;
   overflow: hidden;
 }
-.newsSwiper .swiper-wrapper {
-}
+
 .newsSwiper .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -215,4 +248,90 @@ footer {
   background: #111;
   padding: 20px;
   margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh; /* במקום 100vh, שלא יתפוס את כל המסך */
+  }
+
+  .hero .hero-header {
+    padding: 20px;
+    font-size: 16px; /* הפחתת גודל הפונט כדי שיתאים */
+  }
+
+  .hero .hero-header h1 {
+    font-size: 24px; /* טקסט קטן יותר */
+  }
+
+  .hero .hero-header p {
+    font-size: 14px;
+  }
+
+  .hero .btn {
+    padding: 8px 16px; /* כפתור קטן יותר */
+    font-size: 14px;
+  }
+}
+.hero .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* שומר על יחסי גובה-רוחב בלי לרוקן שטח */
+}
+#services {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: linear-gradient(135deg, #1e1e2f, #232336);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.service-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+
+@media (max-width: 768px) {
+  .hero .swiper-slide img {
+    object-position: center center; /* מוודא שהתמונה ממורכזת גם אם היא חתוכה */
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .hero {
+    position: relative;
+    height:100vh;
+    }
+  #news-board { 
+    max-width: 100%;
+  }
+  .swiper-button-next, .swiper-button-prev { 
+    display: none !important;
+  }
 }
