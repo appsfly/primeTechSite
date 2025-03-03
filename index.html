@@ -3,147 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Symposium: Technologies</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Prime Tech - Innovating the Future</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Lightbox2 CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+
+    <!-- Swiper.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <h1>
-        PrimeTech:
-        <span style="text-transform: capitalize">Shaping Tomorrow’s Tech</span>
-      </h1>
-      <p>Join the Future of Innovation—Today!</p>
+    <header>
+      <div class="logo">PRIME TECH</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Innovating the Future</h1>
+      <p>Advanced AI, Cybersecurity, and Game Development</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
       <p>
-        Exploring the transformative power of technology in Israel and beyond.
+        Prime Tech specializes in AI, Cybersecurity, DevOps, and Game
+        Development, creating futuristic digital solutions.
       </p>
-      <p>
-        <strong>Location:</strong>
-        <a
-          class="location"
-          href="https://www.google.com/maps?q=Yigal+Alon+127,+Tel+Aviv,+Israel"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Yigal Alon 127, Tel Aviv, Israel
-        </a>
-      </p>
-      <a
-        href="https://primetechform.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="button"
-        >Learn More</a
-      >
-    </div>
-    <!--  -->
+    </section>
 
-    <div class="timeline">
-      <h2>Timeline</h2>
-      <!-- <div class="timeline-nav">
-        <button class="nav-btn" onclick="scrollTimeline(-300)">&larr;</button>
-        <button class="nav-btn" onclick="scrollTimeline(300)">&rarr;</button>
-      </div> -->
-      <div class="timeline-container" id="timelineContainer">
-        <div class="event">
-          <h3>TBD</h3>
-          <p>Upcoming Webinar</p>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>AI & Machine Learning</li>
+        <li>Cybersecurity Solutions</li>
+        <li>Game Development</li>
+        <li>Cloud & DevOps</li>
+      </ul>
+    </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              href="assets/images/primeTech-AI-development-1.png"
+              data-lightbox="gallery"
+            >
+              <img
+                src="assets/images/primeTech-AI-development-1.png"
+                alt="Tech Image 1"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="assets/images/primeTech-AI-development-2.png"
+              data-lightbox="gallery"
+            >
+              <img
+                src="assets/images/primeTech-AI-development-2.png"
+                alt="Tech Image 2"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="assets/images/primeTech-AI-development-3.png"
+              data-lightbox="gallery"
+            >
+              <img
+                src="assets/images/primeTech-AI-development-3.png"
+                alt="Tech Image 3"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="assets/images/primeTech-AI-development-4.png"
+              data-lightbox="gallery"
+            >
+              <img
+                src="assets/images/primeTech-AI-development-4.png"
+                alt="Tech Image 4"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="assets/images/primeTech-AI-development-1.png"
+              data-lightbox="gallery"
+            >
+              <img
+                src="assets/images/primeTech-AI-development-1.png"
+                alt="Tech Image 5"
+              />
+            </a>
+          </div>
         </div>
-        <div class="event">
-          <h3>Every Tuesday</h3>
-          <p>HTML & CSS Class (19:00 - 20:00)</p>
-        </div>
-        <div class="event">
-          <h3>Every Friday</h3>
-          <p>JavaScript Class (12:30 - 15:00)</p>
-        </div>
-        <div class="event">
-          <h3>Every Tuesday</h3>
-          <p>Python Class (16:30 - 19:00)</p>
-        </div>
+
+        <!-- כפתורי ניווט -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
-    <main>
-      <h1>NEWS</h1>
-      <!-- <p class="subheadline">
-        Věra Ptáčková passed away. She influenced development of PQ
-        significantly
-      </p> -->
+    </section>
 
-      <div class="news-grid">
-        <div class="featured">
-          <img
-            src="https://pq.cz/wp-content/uploads/2024/10/54085471234_25c600399d_k-500x500.jpg.webp"
-            alt="Věra Ptáčková"
-          />
-        </div>
-
-        <div
-          class="news-item"
-          style="transform: translateY(1006.93px) translateZ(0px)"
-        >
-          <img
-            src="https://pq.cz/wp-content/uploads/2025/01/53060521902_1a25655209_k-500x333.jpg.webp"
-            alt="Graphic Design"
-          />
-          <p class="red-text">
-            <!-- Graphic Designing -->
-          </p>
-          <p>NEWS | 19/02/2025</p>
-        </div>
-
-        <div class="news-item sticky">
-          <img
-            src="https://pq.cz/wp-content/uploads/2025/02/PQ15_New-Spatialities_-Performing-Arts-and-Outdoor-_-Open-Space_SCR_Greece_Martina-Novozamska_4-5-768x960.jpg.webp"
-            alt="Scenography"
-          />
-          <p>Rachel Hann: Scenography is not set; scenography happens</p>
-          <p>NEWS | 29/01/2025</p>
-        </div>
-
-        <div class="news-item">
-          <img
-            src="https://pq.cz/wp-content/uploads/2024/10/54085382978_bb0e3e742b_k-500x500.jpg.webp"
-            alt="Timeline"
-          />
-          <p>
-            Next PQ will take place in 2027. Stay up-to-date with new timeline
-          </p>
-          <p>NEWS | 14/01/2025</p>
-        </div>
-
-        <div class="news-item sticky">
-          <img
-            src="https://pq.cz/wp-content/uploads/2024/10/PQ23_ECR_Lithuania_11_Libor-Galia_00002-768x511.jpg.webp"
-            alt="Symposium"
-          />
-          <p>Photos from the 'technologies' symposium are online</p>
-          <p>NEWS | 02/10/2024</p>
-        </div>
-
-        <div class="news-item">
-          <img
-            src="https://pq.cz/wp-content/uploads/2024/12/Image_20241125_193825_921-2-768x768.jpg.webp"
-            alt="Hackathon"
-          />
-          <p>Tech workshop and hackathon insights</p>
-          <p>NEWS | 10/12/2024</p>
-        </div>
-        <div class="news-item">
-          <img
-            src="https://pq.cz/wp-content/uploads/2024/09/53120318361_623c48e37e_k-768x512.jpg.webp"
-            alt="Hackathon"
-          />
-          <p>Tech workshop and hackathon insights</p>
-          <p>NEWS | 10/12/2024</p>
-        </div>
-      </div>
-    </main>
-    <script>
-      function scrollTimeline(amount) {
-        document
-          .getElementById("timelineContainer")
-          .scrollBy({ left: amount, behavior: "smooth" });
-      }
-    </script>
+    <footer>
+      <p>&copy; 2025 Prime Tech. All Rights Reserved.</p>
+    </footer>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/home.script.js"></script>
   </body>
 </html>

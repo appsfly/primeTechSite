@@ -1,0 +1,172 @@
+/* Reset */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #0ff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 20px;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0ff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+}
+
+#services ul {
+  list-style: none;
+}
+
+#services ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* עיצוב הקרוסלה */
+/* קרוסלת התמונות */
+.swiper {
+  width: 80%;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #0ff; /* צבע חצים */
+}
+
+.swiper-pagination-bullet {
+  background: #0ff; /* צבע נקודות דפדוף */
+}
+
+
+.gallery-lightbox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery-lightbox img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-lightbox img:hover {
+  transform: scale(1.1);
+}
+
+/* עיצוב הקרוסלה */
+.swiper {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #0ff; /* צבע חצים */
+}
+
+.swiper-pagination-bullet {
+  background: #0ff; /* צבע נקודות דפדוף */
+}
+
+/* התאמות לעיצוב הניווט */
+.swiper-button-next, .swiper-button-prev {
+  color: #0ff;
+}
+
+.swiper-pagination-bullet {
+  background: #0ff;
+}
+
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 20px;
+  margin-top: 20px;
+}
